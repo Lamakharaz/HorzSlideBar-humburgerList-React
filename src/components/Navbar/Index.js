@@ -31,6 +31,15 @@ const Navbar = () => {
         {
             title: 'Contant',
             link: '#'
+        },
+
+        {
+            title: 'Log In',
+            link: '#'
+        },
+        {
+            title: 'Hello,Guest!',
+            link: '#'
         }
 
 
@@ -44,7 +53,7 @@ const Navbar = () => {
         <>
         <nav>
             <div className='logo'>
-              <img src="zaralogo.png" style={{width:"100px",height:"50px"}}/> 
+              <img src="zaralogo.png" style={{width:"150px",height:"50px"}}/> 
             </div>
 
             <ul className='desktop-menu'>
@@ -52,7 +61,9 @@ const Navbar = () => {
                     MENU.map((menuItem) => {
                         return <li><a href={menuItem.link}>{menuItem.title}</a></li>
                     })
+                  
                 }
+               
             </ul>
 
 
